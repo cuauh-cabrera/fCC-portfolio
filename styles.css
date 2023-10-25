@@ -25,3 +25,245 @@ ol a {
     text-decoration: none;
     color: black;
 }
+
+/*HEADER*/
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #be3144;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+}
+
+header ul {
+    margin-right: 0px;
+    width: 25vw;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    width: max-content;
+}
+
+header ul li a {
+    color: #f3f3f3;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/*HERO*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.hero > h1 {
+    width: 100%;
+    margin-top: 30vh;
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero > p {
+    width: 100%;
+    margin-top: 4vh;
+    text-align: center;
+    color: #be3144;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+/*PROJECTS*/
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #45567d;
+}
+
+.projects > h2 {
+    width:fit-content;
+    border-bottom: solid #f3f3f3 2.5px;
+    margin-top: 13vh;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    
+
+}
+/*CARD CONTAINER*/
+.projects-container {
+    width: 95%;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+/*PROJECTS CARDS*/
+.projects__card {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__card--img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projects__card--img  > img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.projects__card--img > figcaption {
+    background-color: #303841;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #f3f3f3;
+    padding: 1.5rem;
+}
+
+/*BUTTON*/
+.btn {
+    border: none;
+    width: 12%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #303841;
+    padding: 0.5rem;
+    color: #f3f3f3;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #be3144;
+    transition: 0.5s;
+}
+
+/*CONTACT*/
+.contact {
+    margin-top: 0px;
+    width: 100%;
+    background-color: #303841;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact > h2 {
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.contact > p {
+    width: 100%;
+    margin-top: 0.25rem;
+    text-align: center;
+    color: #f3f3f3;
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.contact__list {
+    width: 90%;
+    height: 10vh;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact__list > li {
+    width: 20%;
+    height: 5vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact__list > li > a {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f3f3f3;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/*FOOTER*/
+footer {
+    border-top: solid #be3144 4px;
+    background-color: #303841;
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > p {
+    color: #f3f3f3;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+

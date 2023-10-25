@@ -1,13 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" freeCodeCamp Personal Portfolio Webpage" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles.css">
-    <title>Portfolio</title>
+    <title>freeCodeCamp Portfolio</title>
 </head>
+
 <body>
-    
+    <!--HEADER & NAVBAR-->
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--HERO-->
+    <section class="hero" id="welcome-section">
+        <h1>Hey! I am Cuau</h1>
+        <p>a web developer</p>
+    </section>
+    <!--PROJECTS-->
+    <section class="projects" id="projects">
+        <h2>These are some of my projects</h2>
+        <div class="projects-container">
+            <!--TRIBUTE PAGE-->
+            <article class="projects__card" id="tribute-page">
+                <figure  class="projects__card--img">
+                    <img
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                        alt="tribute page project"></img>
+                    <figcaption>Tribute Page</figcaption>
+                </figure>
+            </article>
+            <!--RANDOM QUOTE-->
+            <article class="projects__card" id="random-quote">
+                <figure  class="projects__card--img">
+                    <img
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                        alt="random quote"></img>
+                    <figcaption>Random Quote</figcaption>
+                </figure>
+            </article>
+            <!--CALCULATOR-->
+            <article class="projects__card" id="javascript-calc">
+                <figure class="projects__card--img">
+                    <img
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+                        alt="javascript calculator"></img>
+                    <figcaption>JavaScript Calculator</figcaption>
+                </figure>
+            </article>
+            <!--MAP DATA-->
+            <article class="projects__card" id="map-data">
+                <figure  class="projects__card--img">
+                    <img
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+                        alt="map data across the globe"></img>
+                    <figcaption>Map Data Across the Globe</figcaption>
+                </figure>
+            </article>
+            <!--WIKIPEDIA VIEWER-->
+            <article class="projects__card" id="wiki-viewer">
+                <figure  class="projects__card--img">
+                    <img
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+                        alt="wikipedia viewer"></img>
+                    <figcaption>Wikipedia Viewer</figcaption>
+                </figure>
+            </article>
+            <!--TICTAC-->
+            <article class="projects__card" id="tic-tac">
+                <figure  class="projects__card--img">
+                    <img
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+                        alt="tic tac toe"></img>
+                    <figcaption>Tic Tac Toe Game</figcaption>
+                </figure>
+            </article>
+        </div>
+        <!--BUTTON-->
+        <button type="submit" class="btn">Show all</button>
+    </section>
+    <!--CONTACT-->
+    <section class="contact" id="contact">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+        <ul class="contact__list">
+            <li>
+                <a id="profile-link" href="#" target="_blank">
+                    <i class="fab fa-facebook-square"></i> Facebook</a>
+            </li>
+            <li>
+                <a id="profile-link" href="https://github.com/cuauh-cabrera" target="_blank">
+                    <i class="fab fa-github"></i>Github</a>
+            </li>
+            <li>
+                <a id="profile-link" href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>Twitter</a>
+            </li>
+            <li>
+                <a id="profile-link" href="#" target="_blank">
+                    <i class="fas fa-at"></i>Send a mail</a>
+            </li>
+            <li>
+                <a id="profile-link" href="#" target="_blank">
+                    <i class="fas fa-mobile-alt"></i>Call me</a>
+            </li>
+        </ul>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        <p>© Designed by freeCodeCamp</p>
+    </footer>
 </body>
+
 </html>
